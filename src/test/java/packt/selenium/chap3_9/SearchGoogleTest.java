@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
 import packt.selenium.chap3_9.pageobjects.Google;
 import packt.selenium.chap3_9.pageobjects.GoogleSearchPage;
 
@@ -25,6 +27,7 @@ public class SearchGoogleTest {
     	System.setProperty("webdriver.chrome.driver",
 				"./src/test/resources/drivers/chromedriver.exe");
         //driver = new FirefoxDriver();
+    	//driver = new InternetExplorerDriver();
     	driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
